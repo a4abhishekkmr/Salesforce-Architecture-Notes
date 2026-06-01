@@ -1,29 +1,63 @@
-# Salesforce-Architecture-Notes
-Comprehensive Salesforce Architecture Notes, Design Patterns, Integration Strategies, Security Models, Governor Limits and Best Practices.
+# Salesforce Architecture Notes
 
-Folders need to be added in this are:
+A collection of Salesforce Architecture concepts, best practices, design patterns, integration strategies and real-world implementation notes.
 
+## Topics Covered
+
+### Core Salesforce
+
+* Data Modeling
+* Security & Sharing
+* Governor Limits
+* Apex Best Practices
+* Lightning Web Components
+
+### Architecture
+
+* Service Layer Pattern
+* Selector Pattern
+* Trigger Framework
+* Enterprise Design Patterns
+
+### Integrations
+
+* REST API
+* SOAP API
+* Platform Events
+* Named Credentials
+* External Services
+
+### Automation
+
+* Flows
+* Approval Processes
+* Scheduled Automation
+
+### DevOps
+
+* Salesforce DX
+* Git Strategy
+* CI/CD Pipelines
+
+### AI
+
+* Agentforce
+* Prompt Builder
+* Einstein
+
+## Repository Structure
 
 Architecture/
-
 Security/
-
 Integrations/
-
 Governor-Limits/
-
 Apex-Design-Patterns/
-
 LWC/
-
 Flows/
-
-Data-Modeling/
-
 Deployment/
-
 Agentforce/
 
-Interview-Questions/
+## Author
 
-Diagrams/
+Abhishek Kumar
+Salesforce Developer
