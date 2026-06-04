@@ -34,3 +34,17 @@ Bad:
 for(Account acc : accounts){
     Contact c = [SELECT Id FROM Contact WHERE AccountId = :acc.Id];
 }
+
+Good:
+```apex
+Set<Id> accountIds = new Set<Id>();
+
+for(Account acc : accounts){
+    accountIds.add(acc.Id);
+}
+
+List<Contact> contacts = [
+    SELECT Id, AccountId
+    FROM Contact
+    WHERE AccountId IN :accountIds
+];
