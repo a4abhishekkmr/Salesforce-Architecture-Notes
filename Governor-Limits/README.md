@@ -34,7 +34,7 @@ Bad:
 for(Account acc : accounts){
     Contact c = [SELECT Id FROM Contact WHERE AccountId = :acc.Id];
 }
-
+```
 Good:
 ```apex
 Set<Id> accountIds = new Set<Id>();
@@ -48,3 +48,4 @@ List<Contact> contacts = [
     FROM Contact
     WHERE AccountId IN :accountIds
 ];
+```
