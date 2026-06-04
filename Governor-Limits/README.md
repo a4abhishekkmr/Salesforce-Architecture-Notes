@@ -1,20 +1,36 @@
-# Governor Limits
+# Salesforce Governor Limits
 
-## SOQL
+## Why Governor Limits Exist
+Salesforce is a multi-tenant platform where multiple customers share resources.
 
-100 Queries per transaction
+## Common Governor Limits
 
-## DML
+### SOQL Queries
+- 100 synchronous SOQL queries per transaction
+- 200 asynchronous SOQL queries per transaction
 
-150 DML statements
+### DML Statements
+- 150 DML statements per transaction
 
-## Heap Size
+### Records Retrieved
+- 50,000 records via SOQL
 
-6 MB synchronous
-12 MB asynchronous
+### Heap Size
+- 6 MB synchronous
+- 12 MB asynchronous
 
-## CPU Time
+## Best Practices
 
-10 seconds synchronous
+- Avoid SOQL inside loops
+- Avoid DML inside loops
+- Use collections (List, Set, Map)
+- Use bulkified code
+- Use asynchronous processing when needed
 
-60 seconds asynchronous
+## Example
+
+Bad:
+```apex
+for(Account acc : accounts){
+    Contact c = [SELECT Id FROM Contact WHERE AccountId = :acc.Id];
+}
