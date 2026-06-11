@@ -47,15 +47,15 @@ A collection of Salesforce Architecture concepts, best practices, design pattern
 
 ## Repository Structure
 
-Architecture/
-Security/
-Integrations/
-Governor-Limits/
-Apex-Design-Patterns/
-LWC/
-Flows/
-Deployment/
-Agentforce/
+- Architecture
+- Security
+- Integrations
+- Governor-Limits
+- Apex-Design-Patterns
+- LWC
+- Flows
+- Deployment
+- Agentforce
 
 ## Author
 
